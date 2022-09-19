@@ -25,3 +25,5 @@ else:
     bmi_output = "clinically obese"
 
 print(f"Your calculated BMI is {bmi_output}")
+
+# This is a comment for GIT
