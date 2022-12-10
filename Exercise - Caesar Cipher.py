@@ -14,9 +14,12 @@ def caesar(start_text, shift_amount, cipher_direction):
         # Can you fix the code to keep the number/symbol/space when the text is encoded/decoded?
         # e.g. start_text = "meet me at 3"
         # end_text = "•••• •• •• 3"
-        position = alphabet.index(char)
-        new_position = position + shift_amount
-        end_text += alphabet[new_position]
+        if char not in alphabet:
+            end_text += char
+        else:
+            position = alphabet.index(char)
+            new_position = position + shift_amount
+            end_text += alphabet[new_position]
 
     print(f"Here's the {cipher_direction}d result: {end_text}")
 
@@ -28,14 +31,21 @@ print(logo)
 # e.g. Type 'yes' if you want to go again. Otherwise type 'no'.
 # If they type 'yes' then ask them for the direction/text/shift again and call the caesar() function again?
 # Hint: Try creating a while loop that continues to execute the program if the user types 'yes'.
-
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
+game_over = True
+while game_over:
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
+    if shift > 26:
+        shift = shift % 26
+    caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
+    play_again = input("Run Cipher again? ")
+    if play_again == "no":
+        game_over = False
 
 # TODO-2: What if the user enters a shift that is greater than the number of letters in the alphabet?
 # Try running the program and entering a shift number of 45.
 # Add some code so that the program continues to work even if the user enters a shift number greater than 26.
 # Hint: Think about how you can use the modulus (%).
 
-caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
+
