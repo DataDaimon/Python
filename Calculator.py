@@ -27,12 +27,24 @@ operations = {
     "/": divide
 }
 
-num1 = int(input("Enter a number: "))
-num2 = int(input("Enter second a number: "))
-for symbol in operations:
-    print(symbol)
-operation_symbol = input("Choose an operation: ")
+game_over = True
+
+while game_over:
+    num1 = int(input("Enter a number: "))
+    for symbol in operations:
+        print(symbol)
+    operation_symbol = input("Choose an operation: ")
+    num2 = int(input("Enter second a number: "))
+    calc_func = operations[operation_symbol]
+    answer = calc_func(num1, num2)
+    print(f"{num1} {operation_symbol} {num2} = {answer}")
+    continue_game = input("Continue Calculation (Y or N): ")
+    if continue_game = "n":
+        game_over = False
+    for symbol in operations:
+        print(symbol)
+    operation_symbol = input("Choose an operation: ")
+    num3 = int(input("Enter a new number: "))
+    
 
 
-
-print(f"{num1} {operation_symbol} {num2} = {answer}")
