@@ -25,4 +25,8 @@ operations = {
 
 num1 = int(input("Enter a number: "))
 num2 = int(input("Enter second a number: "))
+for symbol in operations:
+    print(symbol)
+operation_symbol = input"Choose an operation: "
+
 
