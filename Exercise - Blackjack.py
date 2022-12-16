@@ -19,15 +19,24 @@ p_card2 = rand_card()
 d_card1 = rand_card()
 d_card2 = rand_card()
 
-print("\nWelcome to BlackJack Casino\n")
+p_total = p_card1 + p_card2
+d_total = d_card1 + d_card2
+
+print("\nWelcome to BlackJack Casino!\n")
 
 print("Your hand:")
 print(f" [{p_card1}] [{p_card2}]")
-print("Total: ")
+print(f"Total: {p_total}")
 
 print("\nDealer's Hand: ")
 print(f" [{d_card1}] [{d_card2}]")
-print("Total: ")
+print(f"Total: {d_total}")
+
+p_choice = input("\nHit or Stand: ")
+
+if p_choice == "hit":
+    p_card3 = rand_card()
+    
 
 
 
