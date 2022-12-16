@@ -38,7 +38,4 @@ if p_choice == "hit":
     p_card3 = rand_card()
 
 
-    
-
-
 
