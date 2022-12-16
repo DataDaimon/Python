@@ -23,8 +23,11 @@ print("\nWelcome to BlackJack Casino\n")
 
 print("Your hand:")
 print(f" [{p_card1}] [{p_card2}]")
+print("Total: ")
 
 print("\nDealer's Hand: ")
 print(f" [{d_card1}] [{d_card2}]")
+print("Total: ")
+
 
 
