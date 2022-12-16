@@ -36,6 +36,8 @@ p_choice = input("\nHit or Stand: ")
 
 if p_choice == "hit":
     p_card3 = rand_card()
+
+
     
 
 
