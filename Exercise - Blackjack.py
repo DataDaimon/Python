@@ -19,7 +19,7 @@ p_card2 = rand_card()
 d_card1 = rand_card()
 d_card2 = rand_card()
 
-p_hand = []
+p_hand = [p_card1, p_card2]
 
 p_total = p_card1 + p_card2
 d_total = d_card1 + d_card2
@@ -38,4 +38,7 @@ p_choice = input("\nHit or Stand: ")
 
 if p_choice == "hit":
     p_card3 = rand_card()
-    print()
+    p_hand.append(p_card3)
+    p_total += p_card3
+    print(p_hand)
+    print(f"Total: {p_total}")
