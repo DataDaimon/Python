@@ -34,11 +34,28 @@ print("\nDealer's Hand: ")
 print(f" [{d_card1}] [{d_card2}]")
 print(f"Total: {d_total}")
 
-p_choice = input("\nHit or Stand: ")
+game_over = False
 
-if p_choice == "hit":
-    p_card3 = rand_card()
-    p_hand.append(p_card3)
-    p_total += p_card3
-    print(p_hand)
-    print(f"Total: {p_total}")
+while not game_over:
+    p_choice = input("\nHit or Stand: ")
+
+    if p_choice == "hit":
+        p_card3 = rand_card()
+        p_hand.append(p_card3)
+        p_total += p_card3
+        print(p_hand)
+        print(f"Total: {p_total}")
+
+    if p_total > 21:
+        print("Bust!")
+        game_over = True
+
+    if p_choice == "stand":
+        if d_total >= p_total:
+            print(f"Dealer: {p_total}, Player: {p_total}")
+            print("Dealer wins")
+            game_over = True
+        else:
+            print(f"Dealer: {p_total}, Player: {p_total}")
+            print("You win!")
+            game_over = True
