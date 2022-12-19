@@ -57,7 +57,7 @@ while not game_over:
             d_hand.append(d_card3)
             d_total += d_card3
 
-        if d_total >= p_total:
+        if d_total >= p_total and d_total <= 21:
             print(f"Dealer: {d_total}, Player: {p_total}")
             print("Dealer wins")
             game_over = True
