@@ -65,6 +65,3 @@ while not game_over:
             print(f"Dealer: {d_total}, Player: {p_total}")
             print("You win!")
             game_over = True
-
-
-            
