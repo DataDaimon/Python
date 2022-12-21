@@ -66,4 +66,3 @@ while not game_over:
             print("You win!")
             game_over = True
 
-            
