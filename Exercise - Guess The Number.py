@@ -9,11 +9,12 @@ import random
 print("\nWelcome to Guess the Number!")
 
 lives = 0
+
 mode = input("Choose Easy or Hard mode: ")
 if mode == "easy":
     lives = 5
 else:
-    lives == 10
+    lives = 10
 
 number = random.randint(1, 100)
 print(number)
@@ -21,6 +22,7 @@ print(number)
 guess = int(input("\nEnter a guess: "))
 
 def check_guess(int_guess, int_number):
+    global lives
     if guess > number:
         print("Too High!")
         return lives - 1
