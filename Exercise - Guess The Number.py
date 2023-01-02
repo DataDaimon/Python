@@ -39,6 +39,7 @@ while not game_over:
 
     check_guess(guess, number)
     print(f"You have {lives} lives left.")
+    
     if lives == 0:
         print(f"No lives left, Game Over.")
         game_over = True
