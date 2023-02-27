@@ -2,6 +2,3 @@
 Python Code   
  
  
-   
-   
-  
