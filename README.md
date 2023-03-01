@@ -2,7 +2,3 @@
 Python Code   
     
 
-
-
-    
-      
