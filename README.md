@@ -3,6 +3,4 @@ Python Code
 
 
 
-   
-   
-   
+  
