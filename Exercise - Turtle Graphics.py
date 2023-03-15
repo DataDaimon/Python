@@ -30,10 +30,5 @@ for _ in range(sides, 10):
     sides += 1
     tim.color(random.choice(colors))
 
-
-
-
-
-
 screen = Screen()
 screen.exitonclick()
