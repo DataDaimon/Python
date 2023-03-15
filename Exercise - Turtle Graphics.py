@@ -10,9 +10,13 @@ tim = Turtle()
 tim.shape("turtle")
 tim.color("blue")
 
-for _ in range(4):
-    tim.forward(100)
-    tim.left(90)
+for _ in range(25):
+    tim.forward(5)
+    tim.penup()
+    tim.forward(5)
+    tim.pendown()
+
+
 
 
 screen = Screen()
