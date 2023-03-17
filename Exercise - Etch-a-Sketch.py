@@ -19,10 +19,15 @@ def move_clockwise():
 def move_cclockwise():
     tieg.left(10)
 
+def clear_screen():
+    tieg.goto(0, 0)
+    tieg.clear()
+
 screen.listen()
 screen.onkey(key="w", fun=move_forward)
 screen.onkey(key="s", fun=move_backward)
 screen.onkey(key="d", fun=move_clockwise)
 screen.onkey(key="a", fun=move_cclockwise)
+screen.onkey(key="c", fun=clear_screen)
 
 screen.exitonclick()
