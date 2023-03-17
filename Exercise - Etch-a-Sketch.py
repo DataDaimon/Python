@@ -19,7 +19,6 @@ def move_clockwise():
 def move_cclockwise():
     tieg.left(10)
 
-
 screen.listen()
 screen.onkey(key="w", fun=move_forward)
 screen.onkey(key="s", fun=move_backward)
