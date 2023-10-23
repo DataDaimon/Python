@@ -1,5 +1,2 @@
 # Python
 Python Code
-   
-       
-   
