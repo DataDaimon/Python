@@ -1,13 +1,2 @@
 # Python
 Python Code
-   
-   
-   
-   
-   
-  
-   
-   
-   
-   
-   
